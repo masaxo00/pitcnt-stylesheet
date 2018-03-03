@@ -1,0 +1,4 @@
+Acá estan los "crudos" de los flairs, osea cada flair por separado.
+Se guardan en .png y en un formato cuadrado de 20x20 a 25x25 pixeles.
+Para armar el spritesheet y modificar el stylesheet se sigue esta guia https://www.reddit.com/r/csshelp/wiki/userflair
+
