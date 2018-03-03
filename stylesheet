@@ -1,0 +1,653 @@
+/* --------- ---------  
+Code created by u/MizMalice
+Please don't claim this as your own.
+You're welcome to use it
+I only ask that you leave my credit here.
+--------- ---------   */
+
+
+/* --------- ---------  BODY --------- -----------------   */
+
+body {
+    background-color: #f4f4f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* --------- ---------  HIDDEN ITEMS  --------- ---------  */
+
+.sidebox.create .morelink,
+.sidebox .subtitle,
+.sidebox.submit .spacer a,
+.sidebox.create .spacer a,
+.titlebox .bottom,
+.srSep,
+.nub,
+.leavecontributor-button,
+.more,
+.users-online:before,
+#header .tabmenu [href$="/ads/"],
+#header .tabmenu [href$="/gilded/"] {
+    display: none;
+}
+
+/* --------- ---------  HEADER  --------- ---------------  */
+
+#header {
+    border-bottom: none;
+    background: url(%%16-edited%%);;
+    height: 100px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+}
+#header-bottom-left {
+    background-color: transparent;
+    border: 0;
+    height: 100px;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+#header-bottom-right {
+    background-color: #ff0000;
+    color: #fff;
+    display: block;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 7px;
+    line-height: 26px;
+    height: 26px;
+    border-radius: 0;
+    padding: 0 10px;
+}
+.user {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: bold;
+    text-transform: capitalize;
+    line-height: 26px;
+    height: 26px;
+    font-weight:4000 !important;
+}
+#header-bottom-right a {
+    color: #fff;
+    font-weight: 300;
+}
+#userbarToggle {
+    color: #fff;
+    background-color: #ff0000;
+    border-right: none;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+}
+#userbarToggle.userbarShow {
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    border-radius: 0;
+}
+#header-img {
+    margin-bottom: -4px;
+    margin-left: 4px;
+    width: 80px;
+    border-bottom: 0px solid transparent;
+}
+.res-navTop {
+    top: 25px;
+}
+#RESShortcutsEditContainer {
+    background-color: transparent;
+    margin-right: 5px;
+}
+#RESShortcutsSort,
+#RESShortcutsRight,
+#RESShortcutsLeft,
+#RESShortcutsAdd,
+#RESShortcutsTrash {
+    background-color: transparent;
+    color: #fff;
+}
+.redditname,
+.redditname a {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 26px;
+    height: 26px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.redditname,
+.redditname a:hover {
+    text-decoration: none;
+    color: #374046;
+}
+#sr-header-area {
+    background-color: #ff0000;
+    display: block;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 24px;
+    height: 26px;
+    padding: 0;
+}
+#sr-more-link,
+#sr-more-link a {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 24px;
+    height: 26px;
+    font-weight: 300;
+}
+#RESShortcuts,
+.separator {
+    color: transparent;
+}
+.sr-bar .separator {
+    color: #fff;
+}
+.tabmenu {
+    margin-left: 20px;
+    margin-top: 79px;
+    border: none;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    text-transform: capitalize;
+    margin: 2px;
+}
+.tabmenu li a {
+    background-color: #ff0000;
+    color: #f4f4f4;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.tabmenu a {
+    background-color: #ff0000;
+    color: #f4f4f4;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.tabmenu li.selected a,
+.tabmenu a:hover {
+    background-color: #f4f4f4;
+    color: #212121;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+
+/* --------- ---------  SIDEBAR  --------- ---------  */
+
+.side {
+    background-color: #fff;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.sidebox.create .spacer {
+    display: none;
+}
+.side a {
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.morelink {
+    border: 0;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+}
+.morelink a {
+    color: #fff;
+    background-color: #ff0000;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+.morelink a:hover {
+    color: #fff;
+    background-color: #6c6c6c;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+.titlebox h1.redditname {
+    color: #212121;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: center;
+}
+body > div.side > div:nth-child(5) > div > form.toggle.res-sr-style-toggle {
+    color: #212121;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: center;
+}
+.titlebox .tagline {
+    border: 0;
+    background: transparent;
+    font-size: 12px;
+    border-width: 0;
+    margin: 0 2px 10px 0;
+    padding: 0 5px 5px 35px;
+}
+.titlebox .subButtons {
+    display: block!important;
+}
+.titlebox .fancy-toggle-button {
+    display: block;
+    margin: 10px 0 0;
+}
+.entry .flat-list,
+.subButtons .fancy-toggle-button {
+    display: inline-block;
+}
+.RESDashboardToggle,
+.RESFilterToggle,
+.RESshortcutside,
+.fancy-toggle-button .active,
+a.blueButton,
+div.blueButton {
+    display: inline-block!important;
+    min-width: 85px;
+    height: auto!important;
+    outline: 0;
+    border-radius: 0!important;
+    text-align: center;
+    font-weight: 300;
+    font-size: 11px!important;
+    line-height: 14px!important;
+    border-color: #6c6c6c!important;
+    margin: 5px -3px 0 0 !important;
+    text-align: center;
+    padding: 3px 7px!important;
+}
+.fancy-toggle-button .add {
+    background: none #6c6c6c!important;
+    color: #f4f4f4;
+    border-color: #6c6c6c!important;
+    font-weight: 300;
+    text-align: center;
+}
+.fancy-toggle-button .remove {
+    background: none #6c6c6c;
+    color: #f4f4f4;
+    font-weight: 300;
+    text-align: center;
+}
+.RESDashboardToggle,
+.RESFilterToggle,
+.RESshortcutside,
+a.blueButton,
+div.blueButton {
+    background: none #6c6c6c!important;
+    color: #f4f4f4!important;
+    text-align: center;
+}
+.subscribers,
+.users-online {
+    position: relative;
+    display: inline-block;
+    width: 108px;
+    vertical-align: top;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 10px 20px 5px;
+    text-align: center;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+.users-online {
+    margin-bottom: .25em;
+    width: 127px;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 0 5px 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.subscribers .number,
+.users-online .number {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+.users-online:after {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    width: 295px;
+    height: 100%;
+    border: 1px solid #fff;
+    content: '';
+    text-align: center;
+}
+.users-online+form.flairtoggle {
+    margin-top: -4px;
+}
+.sidecontentbox .title h1 {
+    color: #fff;
+    background-color: #6c6c6c;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+}
+.sidecontentbox .content {
+    border: 0;
+}
+.content {
+    margin-right: 365px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.thing {
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px #f4f4f4 solid;
+}
+.title a {
+    color: #0375a9!important;
+}
+.title a:hover {
+    color: #6c6c6c!important;
+    text-decoration: underline;
+}
+.link {
+    padding: 10px;
+}
+.thumbnail.self {
+    background-image: none;
+    background-color: #ff0000;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.thumbnail.self:after {
+    content: "T";
+    color: #fff;
+    font-size: 14px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.thumbnail.default {
+    background-image: none;
+    background-color: #6c6c6c;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.thumbnail.default:after {
+    content: "L";
+    color: #fff;
+    font-size: 14px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.thumbnail {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.arrow {
+    width: 16px;
+    height: 16px;
+}
+.dropdown.srdrop .selected,
+.sr-bar a {
+    color: #fff;
+}
+#noresults {
+    padding: 10px;
+}
+.icon-menu a,
+.sidebox .spacer,
+.titlebox form.toggle,
+.leavemoderator {
+    background-color: transparent;
+    margin: 5px;
+    color: #212121;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.linkinfo {
+    background: transparent;
+    border: 0;
+    text-transform: capitalize;
+}
+.footer {
+    border: 0!important;
+    color: gray;
+    text-transform: capitalize;
+}
+.footer-parent {
+    border: 0!important;
+    color: gray;
+    text-transform: capitalize;
+}
+.footer .col {
+    border: 0!important;
+    color: gray;
+    text-transform: capitalize;
+}
+.footer a {
+    border: 0!important;
+    color: gray;
+    text-transform: capitalize;
+}
+
+    /* Abajo de esto van los addons */
+
+/*Upvote y Downvote customizado*/
+.arrow.up { 
+    background: url(%%upArrow%%); 
+}
+
+.arrow.down {
+    background: url(%%downArrow%%); 
+} 
+
+.arrow.upmod {
+    background: url(%%upVote%%); 
+} 
+
+.arrow.downmod { 
+    background: url(%%downVote%%);
+}
+/*Fin Addon*/
+
+/*Texto despues de "hover" el downvote y upvote*/
+.arrow.down:after {
+display:block;
+visibility:hidden;
+position:absolute;
+z-index: 1000;
+margin-top: 10px;
+margin-left:0px;
+padding:10px;
+background-color:rgba(255,15,15,0);
+border:none;
+border-radius:2px;
+color:rgba(255,255,255,0);
+content:"¡Fuera!, ¡Cerdo capitalista!";
+text-align:left;
+letter-spacing:1px;
+font-weight:40;
+font-size:13px;
+transition:all .25s ease;
+pointer-events:none
+}
+
+.arrow.down:hover:after {
+visibility:visible;
+background-color:rgba(255,15,15,0.9);
+color:rgba(255,255,255,1);
+margin-left:48px
+}
+
+.arrow.up:after {
+display:block;
+visibility:hidden;
+position:absolute;
+z-index: 1000;
+margin-top:-20px;
+margin-left:0px;
+padding:10px;
+background-color:rgba(255,15,15,0);
+border:none;
+border-radius:2px;
+color:rgba(255,255,255,0);
+content:"¡Hasta la victoria siempre!";
+text-align:left;
+letter-spacing:1px;
+font-weight:40;
+font-size:13px;
+transition:all .25s ease;
+pointer-events:none
+}
+
+.arrow.up:hover:after {
+visibility:visible;
+background-color:rgba(255,15,15,0.9);
+color:rgba(255,255,255,1);
+margin-left:48px
+}
+/*Fin de Addon*/
+
+/* CSS para header en movimiento */
+@-webkit-keyframes banner1 {0% {background-position: 0 0} 100% {background-position: -2360px 0} }
+@-moz-keyframes banner1 {0% {background-position: 0 0} 100% {background-position: -2360px 0} }
+@-ms-keyframes banner1 {0% {background-position: 0 0} 100% {background-position: -2360px 0} }
+@keyframes banner1 {0% {background-position: 0 0} 100% {background-position: -2360px 0} }
+
+#header { height: 150px; background-image: url(%%16-edited%%); background-repeat: repeat-x; background-position: 0 0; background-size: 2360px 150px; -webkit-animation: banner1 200s 0s infinite linear normal; -moz-animation: banner1 200s 0s infinite linear normal; -ms-animation: banner1 200s 0s infinite linear normal; animation: banner1 200s 0s infinite linear normal; }
+/*Fin de Addon*/
+
+/*Thumbnail comunista*/
+.thumbnail.default { background: url(%%thumbnail-default%%); }
+.thumbnail.self { background: url(%%thumbnail-default%%); }
+.thumbnail.self:after {
+    content: ""
+}
+/*Fin de Addon*/
+
+/*Flairs*/
+.flair {
+    background: url(%%spritesheet%%) no-repeat -9999px;
+    border: 0;
+    padding: 0;
+}
+
+.flair-anarchy {
+    min-width: 20px;
+    height: 18px;
+    background-position: 0 0;
+    text-indent: 23px;
+    line-height: 20px;
+}
+
+.flair-gur {
+    margin-top:5%;
+    min-width: 25px;
+    height: 25px;
+    background-position: 0 -18px;
+    text-indent: 28px;
+    line-height: 25px;
+    margin-bottom:-8px;
+    margin-top: -4px;
+}
+
+.flair-martillo-y-hoz {
+    min-width: 20px;
+    height: 20px;
+    background-position: 0 -43px;
+    text-indent: 23px;
+    line-height: 20px;
+}
+
+.flair-parker {
+    min-width: 25px;
+    height: 25px;
+    background-position: 0 -63px;
+    text-indent: 28px;
+    line-height: 25px;
+}
+
+.flair-pit-cnt {
+    min-width: 20px;
+    height: 20px;
+    background-position: 0 -88px;
+    text-indent: 23px;
+    line-height: 20px;
+}
+
+.flair-socialism {
+    min-width: 17px;
+    height: 23px;
+    background-position: 0 -108px;
+    text-indent: 23px;
+    line-height: 20px;
+}
+
+/*Fin de flairs*/
+
